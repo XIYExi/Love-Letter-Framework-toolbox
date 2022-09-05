@@ -62,6 +62,13 @@
             <version>1.2.70</version>
         </dependency>
 
+        <!--springboot 2.6以上版本pagehelper会出现循环依赖 -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.4.3</version>
+        </dependency>
+
     </dependencies>
 
     <build>

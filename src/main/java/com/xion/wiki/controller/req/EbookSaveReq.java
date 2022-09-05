@@ -1,11 +1,15 @@
-package com.xion.wiki.controller.resp;
+package com.xion.wiki.controller.req;
 
-
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Data
-public class EbookResp {
-
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class EbookSaveReq {
     private Long id;
 
     private String name;
@@ -23,5 +27,4 @@ public class EbookResp {
     private Integer viewCount;
 
     private Integer voteCount;
-
 }

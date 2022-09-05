@@ -45,6 +45,7 @@ public class LogAspect {
         LOG.info("类名方法: {}, {}", signature.getDeclaringTypeName(), name);
         LOG.info("远程地址: {}", request.getRemoteAddr());
 
+
         /*打印请求参数*/
         Object[] args = joinPoint.getArgs();
         // LOG.info("请求参数: {}", JSONObject.toJSONString(args));
@@ -58,9 +59,9 @@ public class LogAspect {
         /*排除字段，敏感字段或者过长的字段不显示*/
         String[] excludeProperties = {"password", "file"};
         PropertyPreFilters filters = new PropertyPreFilters();
-        PropertyPreFilters.MySimplePropertyPreFilter excludeFilter = filters.addFilter();
-        excludeFilter.addExcludes(excludeProperties);
-        LOG.info("请求参数: {}", JSONObject.toJSONString(arguments, excludeFilter));
+        PropertyPreFilters.MySimplePropertyPreFilter excludefilter = filters.addFilter();
+        excludefilter.addExcludes(excludeProperties);
+        LOG.info("请求参数: {}", JSONObject.toJSONString(arguments, excludefilter));
     }
 
     @Around("controllerPointCut()")
@@ -76,6 +77,4 @@ public class LogAspect {
         LOG.info("==========结束 耗时: {} ms==========", System.currentTimeMillis() - startTime);
         return result;
     }
-
-
 }
