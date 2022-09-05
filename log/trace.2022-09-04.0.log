@@ -1,0 +1,536 @@
+2022-09-04 15:38:49.897 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 12868 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-04 15:38:49.897 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-04 15:38:49.927 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-04 15:38:49.927 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-04 15:38:50.798 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-04 15:38:50.808 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-09-04 15:38:50.808 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-04 15:38:50.808 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-04 15:38:50.848 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-04 15:38:50.858 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 931 ms
+2022-09-04 15:38:51.328 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-09-04 15:38:51.328 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-04 15:38:51.339 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-04 15:38:51.349 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-09-04 15:42:12.884 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 2124 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-04 15:42:12.884 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-04 15:42:12.924 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-04 15:42:12.924 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-04 15:42:13.786 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-04 15:42:13.796 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-09-04 15:42:13.796 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-04 15:42:13.796 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-04 15:42:13.835 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-04 15:42:13.835 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 911 ms
+2022-09-04 15:42:14.465 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-04 15:42:14.485 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-7065"]
+2022-09-04 15:42:14.495 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-04 15:42:14.505 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 2.009 seconds (JVM running for 2.669)
+2022-09-04 15:42:14.505 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-04 15:42:14.505 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-04 15:51:20.409 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2022-09-04 15:51:20.499 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-7065"]
+2022-09-04 15:51:20.499 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-04 15:51:20.512 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-7065"]
+2022-09-04 15:51:20.512 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-7065"]
+2022-09-04 15:51:20.592 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 2124 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-04 15:51:20.592 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-04 15:51:20.799 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-04 15:51:20.799 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-09-04 15:51:20.799 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-04 15:51:20.799 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-04 15:51:20.812 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-04 15:51:20.812 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 220 ms
+2022-09-04 15:51:21.119 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-04 15:51:21.129 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-7065"]
+2022-09-04 15:51:21.129 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-04 15:51:21.139 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.58 seconds (JVM running for 549.3)
+2022-09-04 15:51:21.139 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-04 15:51:21.139 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-04 15:51:21.139 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-04 15:51:22.525 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 4 class path changes (4 additions, 0 deletions, 0 modifications)
+2022-09-04 15:51:22.585 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-7065"]
+2022-09-04 15:51:22.585 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-04 15:51:22.585 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-7065"]
+2022-09-04 15:51:22.585 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-7065"]
+2022-09-04 15:51:22.645 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 2124 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-04 15:51:22.645 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-04 15:51:22.835 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-04 15:51:22.835 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-09-04 15:51:22.835 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-04 15:51:22.835 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-04 15:51:22.845 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-04 15:51:22.845 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 200 ms
+2022-09-04 15:51:23.126 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-04 15:51:23.136 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-7065"]
+2022-09-04 15:51:23.136 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-04 15:51:23.146 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.523 seconds (JVM running for 551.305)
+2022-09-04 15:51:23.146 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-04 15:51:23.146 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-04 15:51:23.146 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-04 15:52:08.103 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-04 15:52:08.104 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-09-04 15:52:08.104 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-09-04 15:52:08.146 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-04 15:52:08.147 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/ebook/list, GET
+2022-09-04 15:52:08.147 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.EbookController, list
+2022-09-04 15:52:08.147 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-04 15:52:08.182 INFO  com.xion.wiki.config.aspect.LogAspect             :63   [32m                  [0;39m 请求参数: [{"id":2728389191282,"name":"开发手册","page":0,"size":0}]
+2022-09-04 15:52:08.242 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-09-04 15:52:08.437 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-09-04 15:52:08.442 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (name LIKE ?)
+2022-09-04 15:52:08.458 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: %开发手册%(String)
+2022-09-04 15:52:08.475 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-04 15:52:08.475 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 0
+2022-09-04 15:52:08.476 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-09-04 15:52:08.481 INFO  com.xion.wiki.service.EbookService                :43   [32m                  [0;39m 总行数：0
+2022-09-04 15:52:08.485 INFO  com.xion.wiki.config.aspect.LogAspect             :75   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[]},"message":"成功","success":true}
+2022-09-04 15:52:08.485 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m ==========结束 耗时: 340 ms==========
+2022-09-04 15:53:23.356 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-04 15:53:23.357 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/ebook/list, GET
+2022-09-04 15:53:23.357 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.EbookController, list
+2022-09-04 15:53:23.357 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-04 15:53:23.357 INFO  com.xion.wiki.config.aspect.LogAspect             :63   [32m                  [0;39m 请求参数: [{"name":"","page":1,"size":4}]
+2022-09-04 15:53:23.360 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-04 15:53:23.360 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-09-04 15:53:23.368 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-04 15:53:23.368 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 2
+2022-09-04 15:53:23.368 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-09-04 15:53:23.370 DEBUG com.xion.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select 'true' as QUERYID, id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-04 15:53:23.370 DEBUG com.xion.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 4(Integer)
+2022-09-04 15:53:23.372 TRACE com.xion.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: QUERYID, id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-04 15:53:23.372 TRACE com.xion.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: true, 1, Springboot入门教程, null, null, 0基础入门Java开发,企业级应用首选开发框架, null, null, null, null
+2022-09-04 15:53:23.373 TRACE com.xion.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: true, 2, Vue入门教程, null, null, 0基础入门Vue开发,企业级应用首选开发框架, null, null, null, null
+2022-09-04 15:53:23.373 DEBUG com.xion.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 2
+2022-09-04 15:53:23.374 INFO  com.xion.wiki.service.EbookService                :43   [32m                  [0;39m 总行数：2
+2022-09-04 15:53:23.380 INFO  com.xion.wiki.config.aspect.LogAspect             :75   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"description":"0基础入门Java开发,企业级应用首选开发框架","id":1,"name":"Springboot入门教程"},{"description":"0基础入门Vue开发,企业级应用首选开发框架","id":2,"name":"Vue入门教程"}]},"message":"成功","success":true}
+2022-09-04 15:53:23.380 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m ==========结束 耗时: 24 ms==========
+2022-09-04 15:53:29.995 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-04 15:53:29.995 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/ebook/list, GET
+2022-09-04 15:53:29.996 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.EbookController, list
+2022-09-04 15:53:29.996 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-04 15:53:29.996 INFO  com.xion.wiki.config.aspect.LogAspect             :63   [32m                  [0;39m 请求参数: [{"name":"","page":1,"size":1}]
+2022-09-04 15:53:29.998 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-04 15:53:29.998 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-09-04 15:53:29.999 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-04 15:53:30.000 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 2
+2022-09-04 15:53:30.000 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-09-04 15:53:30.000 DEBUG com.xion.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select 'true' as QUERYID, id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-04 15:53:30.001 DEBUG com.xion.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 1(Integer)
+2022-09-04 15:53:30.002 TRACE com.xion.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: QUERYID, id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-04 15:53:30.002 TRACE com.xion.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: true, 1, Springboot入门教程, null, null, 0基础入门Java开发,企业级应用首选开发框架, null, null, null, null
+2022-09-04 15:53:30.002 DEBUG com.xion.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 1
+2022-09-04 15:53:30.003 INFO  com.xion.wiki.service.EbookService                :43   [32m                  [0;39m 总行数：2
+2022-09-04 15:53:30.003 INFO  com.xion.wiki.config.aspect.LogAspect             :75   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"description":"0基础入门Java开发,企业级应用首选开发框架","id":1,"name":"Springboot入门教程"}]},"message":"成功","success":true}
+2022-09-04 15:53:30.003 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m ==========结束 耗时: 8 ms==========
+2022-09-04 15:54:02.930 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-04 15:54:02.930 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/ebook/list, GET
+2022-09-04 15:54:02.931 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.EbookController, list
+2022-09-04 15:54:02.931 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-04 15:54:02.931 INFO  com.xion.wiki.config.aspect.LogAspect             :63   [32m                  [0;39m 请求参数: [{"name":"","page":1,"size":2}]
+2022-09-04 15:54:02.933 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-04 15:54:02.933 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-09-04 15:54:02.935 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-04 15:54:02.935 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 2
+2022-09-04 15:54:02.935 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-09-04 15:54:02.936 DEBUG com.xion.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select 'true' as QUERYID, id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-04 15:54:02.936 DEBUG com.xion.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2022-09-04 15:54:02.937 TRACE com.xion.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: QUERYID, id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-04 15:54:02.937 TRACE com.xion.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: true, 1, Springboot入门教程, null, null, 0基础入门Java开发,企业级应用首选开发框架, null, null, null, null
+2022-09-04 15:54:02.938 TRACE com.xion.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: true, 2, Vue入门教程, null, null, 0基础入门Vue开发,企业级应用首选开发框架, null, null, null, null
+2022-09-04 15:54:02.939 DEBUG com.xion.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 2
+2022-09-04 15:54:02.939 INFO  com.xion.wiki.service.EbookService                :43   [32m                  [0;39m 总行数：2
+2022-09-04 15:54:02.940 INFO  com.xion.wiki.config.aspect.LogAspect             :75   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"description":"0基础入门Java开发,企业级应用首选开发框架","id":1,"name":"Springboot入门教程"},{"description":"0基础入门Vue开发,企业级应用首选开发框架","id":2,"name":"Vue入门教程"}]},"message":"成功","success":true}
+2022-09-04 15:54:02.940 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m ==========结束 耗时: 10 ms==========
+2022-09-04 16:19:02.460 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 6 class path changes (0 additions, 6 deletions, 0 modifications)
+2022-09-04 16:19:02.560 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:19:02.560 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-04 16:19:02.560 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-09-04 16:19:02.560 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.14.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.14.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.14.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.14.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.14.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.14.1/java.lang.Thread.run(Thread.java:829)
+2022-09-04 16:19:02.560 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:19:02.560 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:19:02.560 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-09-04 16:19:02.570 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-09-04 16:19:02.645 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 2124 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-04 16:19:02.645 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-04 16:19:02.899 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-04 16:19:02.899 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:19:02.899 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-04 16:19:02.899 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-04 16:19:02.924 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-04 16:19:02.924 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 275 ms
+2022-09-04 16:19:03.210 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-04 16:19:03.229 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:19:03.230 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-04 16:19:03.232 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.618 seconds (JVM running for 2211.393)
+2022-09-04 16:19:03.232 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-04 16:19:03.232 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-04 16:19:03.232 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-04 16:19:04.630 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 6 class path changes (6 additions, 0 deletions, 0 modifications)
+2022-09-04 16:19:04.690 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:19:04.690 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-04 16:19:04.690 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:19:04.690 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:19:04.750 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 2124 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-04 16:19:04.750 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-04 16:19:04.910 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-04 16:19:04.910 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:19:04.910 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-04 16:19:04.910 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-04 16:19:04.929 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-04 16:19:04.929 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 176 ms
+2022-09-04 16:19:05.172 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-04 16:19:05.180 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:19:05.189 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-04 16:19:05.189 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.465 seconds (JVM running for 2213.352)
+2022-09-04 16:19:05.189 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-04 16:19:05.189 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-04 16:19:05.189 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-04 16:19:19.085 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-04 16:19:19.086 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-09-04 16:19:19.086 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-09-04 16:19:19.097 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver :208  [32m                  [0;39m Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors<EOL>Field error in object 'ebookReq' on field 'page': rejected value []; codes [typeMismatch.ebookReq.page,typeMismatch.page,typeMismatch.int,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ebookReq.page,page]; arguments []; default message [page]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'int' for property 'page'; nested exception is java.lang.NumberFormatException: For input string: ""]<EOL>Field error in object 'ebookReq' on field 'size': rejected value []; codes [typeMismatch.ebookReq.size,typeMismatch.size,typeMismatch.int,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ebookReq.size,size]; arguments []; default message [size]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'int' for property 'size'; nested exception is java.lang.NumberFormatException: For input string: ""]]
+2022-09-04 16:20:55.186 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-04 16:20:55.186 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/ebook/list, GET
+2022-09-04 16:20:55.187 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.EbookController, list
+2022-09-04 16:20:55.187 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-04 16:20:55.188 INFO  com.xion.wiki.config.aspect.LogAspect             :63   [32m                  [0;39m 请求参数: [{"name":"","page":1,"size":2}]
+2022-09-04 16:20:55.194 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2022-09-04 16:20:55.206 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2022-09-04 16:20:55.206 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-04 16:20:55.206 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-09-04 16:20:55.208 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-04 16:20:55.208 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 2
+2022-09-04 16:20:55.208 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-09-04 16:20:55.209 DEBUG com.xion.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select 'true' as QUERYID, id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-04 16:20:55.209 DEBUG com.xion.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2022-09-04 16:20:55.210 TRACE com.xion.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: QUERYID, id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-04 16:20:55.210 TRACE com.xion.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: true, 1, Springboot入门教程, null, null, 0基础入门Java开发,企业级应用首选开发框架, null, null, null, null
+2022-09-04 16:20:55.211 TRACE com.xion.wiki.mapper.EbookMapper.selectByExample  :143  [32m                  [0;39m <==        Row: true, 2, Vue入门教程, null, null, 0基础入门Vue开发,企业级应用首选开发框架, null, null, null, null
+2022-09-04 16:20:55.212 DEBUG com.xion.wiki.mapper.EbookMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 2
+2022-09-04 16:20:55.212 INFO  com.xion.wiki.service.EbookService                :44   [32m                  [0;39m 总行数：2
+2022-09-04 16:20:55.217 INFO  com.xion.wiki.config.aspect.LogAspect             :75   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[{"description":"0基础入门Java开发,企业级应用首选开发框架","id":1,"name":"Springboot入门教程"},{"description":"0基础入门Vue开发,企业级应用首选开发框架","id":2,"name":"Vue入门教程"}],"total":2}},"message":"成功","success":true}
+2022-09-04 16:20:55.217 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m ==========结束 耗时: 31 ms==========
+2022-09-04 16:27:15.973 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-04 16:27:15.973 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/ebook/list, GET
+2022-09-04 16:27:15.973 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.EbookController, list
+2022-09-04 16:27:15.973 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-04 16:27:15.974 INFO  com.xion.wiki.config.aspect.LogAspect             :63   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-09-04 16:27:15.976 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-04 16:27:15.977 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-09-04 16:27:15.978 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-04 16:27:15.979 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 2
+2022-09-04 16:27:15.979 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-09-04 16:27:15.980 INFO  com.xion.wiki.service.EbookService                :44   [32m                  [0;39m 总行数：2
+2022-09-04 16:27:15.980 INFO  com.xion.wiki.config.aspect.LogAspect             :75   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[],"total":2}},"message":"成功","success":true}
+2022-09-04 16:27:15.980 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m ==========结束 耗时: 7 ms==========
+2022-09-04 16:27:19.970 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-04 16:27:19.970 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/ebook/list, GET
+2022-09-04 16:27:19.971 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.EbookController, list
+2022-09-04 16:27:19.971 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-04 16:27:19.971 INFO  com.xion.wiki.config.aspect.LogAspect             :63   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-09-04 16:27:19.973 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-04 16:27:19.974 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-09-04 16:27:19.975 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-04 16:27:19.976 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 2
+2022-09-04 16:27:19.976 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-09-04 16:27:19.977 INFO  com.xion.wiki.service.EbookService                :44   [32m                  [0;39m 总行数：2
+2022-09-04 16:27:19.977 INFO  com.xion.wiki.config.aspect.LogAspect             :75   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[],"total":2}},"message":"成功","success":true}
+2022-09-04 16:27:19.977 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m ==========结束 耗时: 7 ms==========
+2022-09-04 16:34:45.364 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-04 16:34:45.364 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/ebook/list, GET
+2022-09-04 16:34:45.364 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.EbookController, list
+2022-09-04 16:34:45.364 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-04 16:34:45.365 INFO  com.xion.wiki.config.aspect.LogAspect             :63   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-09-04 16:34:45.373 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-04 16:34:45.373 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-09-04 16:34:45.375 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-04 16:34:45.375 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 2
+2022-09-04 16:34:45.375 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-09-04 16:34:45.375 INFO  com.xion.wiki.service.EbookService                :44   [32m                  [0;39m 总行数：2
+2022-09-04 16:34:45.376 INFO  com.xion.wiki.config.aspect.LogAspect             :75   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[],"total":2}},"message":"成功","success":true}
+2022-09-04 16:34:45.376 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m ==========结束 耗时: 12 ms==========
+2022-09-04 16:38:41.272 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2022-09-04 16:38:41.349 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:38:41.349 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-04 16:38:41.349 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-09-04 16:38:41.349 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.14.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.14.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.14.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.14.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.14.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.14.1/java.lang.Thread.run(Thread.java:829)
+2022-09-04 16:38:41.349 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:38:41.349 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:38:41.349 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2022-09-04 16:38:41.359 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2022-09-04 16:38:41.429 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 2124 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-04 16:38:41.429 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-04 16:38:41.625 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-04 16:38:41.625 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:38:41.625 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-04 16:38:41.625 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-04 16:38:41.635 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-04 16:38:41.635 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 206 ms
+2022-09-04 16:38:41.955 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-04 16:38:41.965 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:38:41.975 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-04 16:38:41.975 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.579 seconds (JVM running for 3390.141)
+2022-09-04 16:38:41.975 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-04 16:38:41.975 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-04 16:38:41.975 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-04 16:38:43.362 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2022-09-04 16:38:43.422 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:38:43.422 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-04 16:38:43.432 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:38:43.432 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:38:43.482 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 2124 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-04 16:38:43.482 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-04 16:38:43.652 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-04 16:38:43.652 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:38:43.652 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-04 16:38:43.652 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-04 16:38:43.672 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-04 16:38:43.672 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 190 ms
+2022-09-04 16:38:44.003 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-04 16:38:44.013 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:38:44.013 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-04 16:38:44.023 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.556 seconds (JVM running for 3392.182)
+2022-09-04 16:38:44.023 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-04 16:38:44.023 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-04 16:38:44.023 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-04 16:38:51.589 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-04 16:38:51.589 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-09-04 16:38:51.590 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-09-04 16:38:51.593 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-04 16:38:51.594 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/ebook/list, GET
+2022-09-04 16:38:51.594 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.EbookController, list
+2022-09-04 16:38:51.594 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-04 16:38:51.596 INFO  com.xion.wiki.config.aspect.LogAspect             :63   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-09-04 16:38:51.611 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
+2022-09-04 16:38:51.624 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
+2022-09-04 16:38:51.625 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-04 16:38:51.625 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-09-04 16:38:51.627 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-04 16:38:51.627 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 2
+2022-09-04 16:38:51.628 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-09-04 16:38:51.629 INFO  com.xion.wiki.service.EbookService                :44   [32m                  [0;39m 总行数：2
+2022-09-04 16:38:51.631 INFO  com.xion.wiki.config.aspect.LogAspect             :75   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[],"total":2}},"message":"成功","success":true}
+2022-09-04 16:38:51.631 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m ==========结束 耗时: 38 ms==========
+2022-09-04 16:41:21.301 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2022-09-04 16:41:21.370 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:41:21.370 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-04 16:41:21.370 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-09-04 16:41:21.380 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.14.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.14.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.14.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.14.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.14.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.14.1/java.lang.Thread.run(Thread.java:829)
+2022-09-04 16:41:21.380 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:41:21.380 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:41:21.380 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
+2022-09-04 16:41:21.390 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
+2022-09-04 16:41:21.460 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 2124 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-04 16:41:21.460 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-04 16:41:21.680 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-04 16:41:21.680 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:41:21.680 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-04 16:41:21.680 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-04 16:41:21.690 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-04 16:41:21.690 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 230 ms
+2022-09-04 16:41:21.990 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-04 16:41:22.000 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:41:22.000 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-04 16:41:22.000 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.574 seconds (JVM running for 3550.168)
+2022-09-04 16:41:22.010 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-04 16:41:22.010 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-04 16:41:22.010 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-04 16:41:23.407 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2022-09-04 16:41:23.467 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:41:23.467 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-04 16:41:23.467 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:41:23.467 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:41:23.527 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 2124 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-04 16:41:23.527 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-04 16:41:23.697 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-04 16:41:23.707 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:41:23.707 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-04 16:41:23.707 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-04 16:41:23.717 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-04 16:41:23.717 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 190 ms
+2022-09-04 16:41:23.977 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-04 16:41:23.987 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:41:23.987 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-04 16:41:23.987 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.482 seconds (JVM running for 3552.155)
+2022-09-04 16:41:23.997 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-04 16:41:23.997 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-04 16:41:23.997 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-04 16:41:29.611 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-04 16:41:29.611 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-09-04 16:41:29.612 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-09-04 16:41:29.614 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-04 16:41:29.614 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/ebook/list, GET
+2022-09-04 16:41:29.615 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.EbookController, list
+2022-09-04 16:41:29.615 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-04 16:41:29.616 INFO  com.xion.wiki.config.aspect.LogAspect             :63   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-09-04 16:41:29.622 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-4 - Starting...
+2022-09-04 16:41:29.634 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-4 - Start completed.
+2022-09-04 16:41:29.635 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-04 16:41:29.635 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-09-04 16:41:29.637 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-04 16:41:29.637 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 2
+2022-09-04 16:41:29.637 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-09-04 16:41:29.638 INFO  com.xion.wiki.service.EbookService                :44   [32m                  [0;39m 总行数：2
+2022-09-04 16:41:29.640 INFO  com.xion.wiki.config.aspect.LogAspect             :75   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[],"total":2}},"message":"成功","success":true}
+2022-09-04 16:41:29.640 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m ==========结束 耗时: 26 ms==========
+2022-09-04 16:43:00.845 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2022-09-04 16:43:00.915 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:43:00.915 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-04 16:43:00.915 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-09-04 16:43:00.915 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [HikariPool-4 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.14.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.14.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.14.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.14.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.14.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.14.1/java.lang.Thread.run(Thread.java:829)
+2022-09-04 16:43:00.915 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:43:00.915 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:43:00.915 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-4 - Shutdown initiated...
+2022-09-04 16:43:00.925 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-4 - Shutdown completed.
+2022-09-04 16:43:00.985 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 2124 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-04 16:43:00.985 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-04 16:43:01.226 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-04 16:43:01.226 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:43:01.226 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-04 16:43:01.226 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-04 16:43:01.236 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-04 16:43:01.236 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 251 ms
+2022-09-04 16:43:01.526 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-04 16:43:01.539 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:43:01.541 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-04 16:43:01.544 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.575 seconds (JVM running for 3649.703)
+2022-09-04 16:43:01.545 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-04 16:43:01.545 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-04 16:43:01.545 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-04 16:43:02.953 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2022-09-04 16:43:03.037 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:43:03.037 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-04 16:43:03.037 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:43:03.037 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:43:03.093 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 2124 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-04 16:43:03.093 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-04 16:43:03.243 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-04 16:43:03.243 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:43:03.243 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-04 16:43:03.243 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-04 16:43:03.253 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-04 16:43:03.253 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 160 ms
+2022-09-04 16:43:03.491 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-04 16:43:03.501 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:43:03.501 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-04 16:43:03.501 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.436 seconds (JVM running for 3651.669)
+2022-09-04 16:43:03.511 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-04 16:43:03.511 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-04 16:43:03.511 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-04 16:43:38.062 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-04 16:43:38.062 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-09-04 16:43:38.063 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-09-04 16:43:38.065 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-04 16:43:38.065 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/ebook/list, GET
+2022-09-04 16:43:38.065 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.EbookController, list
+2022-09-04 16:43:38.065 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-04 16:43:38.066 INFO  com.xion.wiki.config.aspect.LogAspect             :63   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-09-04 16:43:38.072 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-5 - Starting...
+2022-09-04 16:43:38.084 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-5 - Start completed.
+2022-09-04 16:43:38.085 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-04 16:43:38.085 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-09-04 16:43:38.087 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-04 16:43:38.087 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 2
+2022-09-04 16:43:38.088 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-09-04 16:43:38.088 INFO  com.xion.wiki.service.EbookService                :44   [32m                  [0;39m 总行数：2
+2022-09-04 16:43:38.090 INFO  com.xion.wiki.config.aspect.LogAspect             :75   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[],"total":2}},"message":"成功","success":true}
+2022-09-04 16:43:38.090 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m ==========结束 耗时: 26 ms==========
+2022-09-04 16:45:45.664 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-5 - Shutdown initiated...
+2022-09-04 16:45:45.674 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-5 - Shutdown completed.
+2022-09-04 16:45:49.552 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 12216 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-04 16:45:49.552 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-04 16:45:49.582 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-04 16:45:49.582 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-04 16:46:06.343 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 3880 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-04 16:46:06.343 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-04 16:46:06.383 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-04 16:46:06.383 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-04 16:46:07.423 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-04 16:46:07.438 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:46:07.438 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-04 16:46:07.438 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-04 16:46:07.483 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-04 16:46:07.483 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1100 ms
+2022-09-04 16:46:08.187 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-04 16:46:08.203 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-7065"]
+2022-09-04 16:46:08.218 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-04 16:46:08.227 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 2.338 seconds (JVM running for 3.993)
+2022-09-04 16:46:08.230 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-04 16:46:08.230 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-04 16:47:08.280 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-04 16:47:08.281 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-09-04 16:47:08.283 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
+2022-09-04 16:47:08.324 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-04 16:47:08.324 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/ebook/list, GET
+2022-09-04 16:47:08.325 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.EbookController, list
+2022-09-04 16:47:08.325 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-04 16:47:08.367 INFO  com.xion.wiki.config.aspect.LogAspect             :63   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-09-04 16:47:08.438 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-09-04 16:47:08.711 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-09-04 16:47:08.718 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-04 16:47:08.739 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-09-04 16:47:08.758 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-04 16:47:08.759 TRACE c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 2
+2022-09-04 16:47:08.760 DEBUG c.x.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-09-04 16:47:08.766 INFO  com.xion.wiki.service.EbookService                :44   [32m                  [0;39m 总行数：2
+2022-09-04 16:47:08.772 INFO  com.xion.wiki.config.aspect.LogAspect             :75   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[],"total":2}},"message":"成功","success":true}
+2022-09-04 16:47:08.773 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m ==========结束 耗时: 450 ms==========
+2022-09-04 16:49:10.143 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-09-04 16:49:10.153 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
