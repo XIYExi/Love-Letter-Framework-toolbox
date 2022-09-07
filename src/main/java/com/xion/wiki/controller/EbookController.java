@@ -9,6 +9,8 @@ import com.xion.wiki.utils.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 @RestController
 @RequestMapping("ebook")
 public class EbookController {
@@ -17,14 +19,14 @@ public class EbookController {
     private EbookServiceImpl ebookService;
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
-    public R list(EbookQueryReq req){
+    public R list(@Valid EbookQueryReq req){
         System.err.println(req);
         PageResp<EbookQueryResp> list = ebookService.list(req);
         return R.ok().data("list", list);
     }
 
     @RequestMapping(value = "/save", method = RequestMethod.POST)
-    public R save(@RequestBody EbookSaveReq req){
+    public R save(@Valid @RequestBody EbookSaveReq req){
         ebookService.save(req);
         return R.ok();
     }
