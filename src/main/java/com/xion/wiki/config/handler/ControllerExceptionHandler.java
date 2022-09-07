@@ -26,6 +26,7 @@ public class ControllerExceptionHandler {
     @ResponseBody
     public R validExceptionHandler(BindException e) {
         LOG.warn("参数校验失败：{}", e.getBindingResult().getAllErrors().get(0).getDefaultMessage());
+        // System.err.println("BindException 走了空校验");
         return R.error().message(e.getBindingResult().getAllErrors().get(0).getDefaultMessage());
     }
 

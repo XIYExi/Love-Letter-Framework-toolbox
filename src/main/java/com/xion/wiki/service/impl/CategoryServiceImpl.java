@@ -34,11 +34,9 @@ public class CategoryServiceImpl implements CategoryService {
     public List<CategoryQueryResp> all() {
         CategoryExample categoryExample = new CategoryExample();
         categoryExample.setOrderByClause("sort asc");
-        List<Category> categoryList = categoryMapper.selectByExample(categoryExample);
+        List<Category> categoryList = categoryMapper.selectByExample(categoryExample);// 列表复制
 
-        // 列表复制
         List<CategoryQueryResp> list = CopyUtil.copyList(categoryList, CategoryQueryResp.class);
-
         return list;
     }
 

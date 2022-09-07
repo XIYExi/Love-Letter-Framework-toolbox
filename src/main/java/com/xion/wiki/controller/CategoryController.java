@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @RequestMapping("/category")
@@ -21,7 +22,9 @@ public class CategoryController {
 
     @GetMapping("/all")
     public R all() {
-        return R.ok().data("list", categoryService.all());
+        List<CategoryQueryResp> all = categoryService.all();
+        // System.err.println(all);
+        return R.ok().data("list", all);
     }
 
     @GetMapping("/list")
