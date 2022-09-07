@@ -8,8 +8,6 @@ import com.xion.wiki.service.impl.CategoryServiceImpl;
 import com.xion.wiki.utils.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import javax.annotation.Resource;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -40,8 +38,9 @@ public class CategoryController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public R delete(@PathVariable Long id) {
-        categoryService.delete(id);
+    public R delete(@PathVariable String id) {
+        System.err.println("delete category id: "+id);
+        categoryService.delete(Long.parseLong(id));
         return R.ok();
     }
 }

@@ -20,7 +20,7 @@ public class EbookController {
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public R list(@Valid EbookQueryReq req){
-        System.err.println(req);
+        // System.err.println(req);
         PageResp<EbookQueryResp> list = ebookService.list(req);
         return R.ok().data("list", list);
     }

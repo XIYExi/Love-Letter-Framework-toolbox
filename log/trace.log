@@ -286,3 +286,632 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: com.xion.wiki.do
 2022-09-07 21:45:49.709 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 8
 2022-09-07 21:45:49.733 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
 2022-09-07 21:45:49.733 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 277 ms==========
+2022-09-07 21:52:33.161 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:52:33.161 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 21:52:33.161 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 21:52:33.162 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:52:33.162 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 21:52:33.163 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 21:52:33.164 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 21:52:33.165 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 21:52:33.165 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档, 100
+2022-09-07 21:52:33.166 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 21:52:33.166 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 21:52:33.166 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 21:52:33.167 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 21:52:33.167 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 21:52:33.168 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 21:52:33.168 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 21:52:33.170 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 8
+2022-09-07 21:52:33.174 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 21:52:33.174 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 13 ms==========
+2022-09-07 21:52:38.614 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:52:38.615 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/save, POST
+2022-09-07 21:52:38.615 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, save
+2022-09-07 21:52:38.615 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:52:38.615 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [{"id":100,"name":"Love Letter Framwrok 文档s","parent":0,"sort":100}]
+2022-09-07 21:52:38.618 DEBUG c.x.wiki.mapper.CategoryMapper.updateByPrimaryKey :137  [32m                  [0;39m ==>  Preparing: update category set parent = ?, `name` = ?, sort = ? where id = ?
+2022-09-07 21:52:38.619 DEBUG c.x.wiki.mapper.CategoryMapper.updateByPrimaryKey :137  [32m                  [0;39m ==> Parameters: 0(Long), Love Letter Framwrok 文档s(String), 100(Integer), 100(Long)
+2022-09-07 21:52:38.631 DEBUG c.x.wiki.mapper.CategoryMapper.updateByPrimaryKey :137  [32m                  [0;39m <==    Updates: 1
+2022-09-07 21:52:38.632 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{},"message":"成功","success":true}
+2022-09-07 21:52:38.632 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 18 ms==========
+2022-09-07 21:52:38.651 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:52:38.651 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 21:52:38.651 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 21:52:38.651 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:52:38.651 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 21:52:38.652 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 21:52:38.652 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 21:52:38.654 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 21:52:38.654 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档s, 100
+2022-09-07 21:52:38.654 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 21:52:38.655 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 21:52:38.655 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 21:52:38.655 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 21:52:38.655 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 21:52:38.656 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 21:52:38.656 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 21:52:38.656 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 8
+2022-09-07 21:52:38.657 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档s","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 21:52:38.657 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 6 ms==========
+2022-09-07 21:52:46.139 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:52:46.139 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/save, POST
+2022-09-07 21:52:46.139 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, save
+2022-09-07 21:52:46.140 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:52:46.140 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100}]
+2022-09-07 21:52:46.141 DEBUG c.x.wiki.mapper.CategoryMapper.updateByPrimaryKey :137  [32m                  [0;39m ==>  Preparing: update category set parent = ?, `name` = ?, sort = ? where id = ?
+2022-09-07 21:52:46.141 DEBUG c.x.wiki.mapper.CategoryMapper.updateByPrimaryKey :137  [32m                  [0;39m ==> Parameters: 0(Long), Love Letter Framwrok 文档(String), 100(Integer), 100(Long)
+2022-09-07 21:52:46.149 DEBUG c.x.wiki.mapper.CategoryMapper.updateByPrimaryKey :137  [32m                  [0;39m <==    Updates: 1
+2022-09-07 21:52:46.149 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{},"message":"成功","success":true}
+2022-09-07 21:52:46.149 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 10 ms==========
+2022-09-07 21:52:46.173 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:52:46.174 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 21:52:46.174 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 21:52:46.174 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:52:46.174 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 21:52:46.174 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 21:52:46.175 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 21:52:46.176 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 21:52:46.176 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档, 100
+2022-09-07 21:52:46.177 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 21:52:46.177 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 21:52:46.177 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 21:52:46.177 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 21:52:46.178 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 21:52:46.178 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 21:52:46.178 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 21:52:46.178 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 8
+2022-09-07 21:52:46.179 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 21:52:46.179 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 6 ms==========
+2022-09-07 21:52:55.671 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:52:55.671 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 21:52:55.672 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 21:52:55.672 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:52:55.672 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 21:52:55.672 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 21:52:55.673 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 21:52:55.673 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 21:52:55.674 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档, 100
+2022-09-07 21:52:55.674 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 21:52:55.674 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 21:52:55.674 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 21:52:55.674 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 21:52:55.675 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 21:52:55.675 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 21:52:55.675 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 21:52:55.675 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 8
+2022-09-07 21:52:55.676 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 21:52:55.676 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 5 ms==========
+2022-09-07 21:52:56.765 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:52:56.765 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 21:52:56.765 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 21:52:56.765 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:52:56.765 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 21:52:56.766 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 21:52:56.766 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 21:52:56.767 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 21:52:56.767 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档, 100
+2022-09-07 21:52:56.768 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 21:52:56.768 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 21:52:56.768 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 21:52:56.768 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 21:52:56.769 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 21:52:56.769 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 21:52:56.769 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 21:52:56.770 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 8
+2022-09-07 21:52:56.771 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 21:52:56.771 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 6 ms==========
+2022-09-07 21:52:57.554 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:52:57.554 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 21:52:57.554 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 21:52:57.554 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:52:57.555 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 21:52:57.555 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 21:52:57.556 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 21:52:57.556 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 21:52:57.557 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档, 100
+2022-09-07 21:52:57.557 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 21:52:57.557 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 21:52:57.558 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 21:52:57.558 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 21:52:57.558 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 21:52:57.559 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 21:52:57.559 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 21:52:57.559 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 8
+2022-09-07 21:52:57.560 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 21:52:57.560 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 6 ms==========
+2022-09-07 21:53:08.389 WARN  c.x.wiki.config.handler.ControllerExceptionHandler:28   [32m                  [0;39m 参数校验失败：【排序】不能为空
+2022-09-07 21:53:08.391 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :208  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.xion.wiki.utils.R com.xion.wiki.controller.CategoryController.save(com.xion.wiki.controller.req.CategorySaveReq): [Field error in object 'categorySaveReq' on field 'sort': rejected value [null]; codes [NotNull.categorySaveReq.sort,NotNull.sort,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [categorySaveReq.sort,sort]; arguments []; default message [sort]]; default message [【排序】不能为空]] ]
+2022-09-07 21:53:12.858 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:53:12.858 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/save, POST
+2022-09-07 21:53:12.858 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, save
+2022-09-07 21:53:12.859 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:53:12.859 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [{"name":"sdasdsa","parent":100,"sort":103}]
+2022-09-07 21:53:12.859 DEBUG com.xion.wiki.mapper.CategoryMapper.insert        :137  [32m                  [0;39m ==>  Preparing: insert into category (id, parent, `name`, sort) values (?, ?, ?, ?)
+2022-09-07 21:53:12.860 DEBUG com.xion.wiki.mapper.CategoryMapper.insert        :137  [32m                  [0;39m ==> Parameters: 90444263783010304(Long), 100(Long), sdasdsa(String), 103(Integer)
+2022-09-07 21:53:12.864 DEBUG com.xion.wiki.mapper.CategoryMapper.insert        :137  [32m                  [0;39m <==    Updates: 1
+2022-09-07 21:53:12.864 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{},"message":"成功","success":true}
+2022-09-07 21:53:12.864 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 6 ms==========
+2022-09-07 21:53:12.880 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:53:12.880 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 21:53:12.880 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 21:53:12.880 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:53:12.881 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 21:53:12.881 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 21:53:12.882 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 21:53:12.883 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 21:53:12.883 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档, 100
+2022-09-07 21:53:12.883 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 21:53:12.883 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 21:53:12.883 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 90444263783010304, 100, sdasdsa, 103
+2022-09-07 21:53:12.884 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 21:53:12.884 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 21:53:12.884 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 21:53:12.884 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 21:53:12.885 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 21:53:12.885 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 9
+2022-09-07 21:53:12.886 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":90444263783010304,"name":"sdasdsa","parent":100,"sort":103},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 21:53:12.886 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 6 ms==========
+2022-09-07 21:53:15.654 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:53:15.655 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/delete/90444263783010300, DELETE
+2022-09-07 21:53:15.655 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, delete
+2022-09-07 21:53:15.655 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:53:15.655 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [90444263783010300]
+2022-09-07 21:53:15.656 DEBUG c.x.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m ==>  Preparing: delete from category where id = ?
+2022-09-07 21:53:15.656 DEBUG c.x.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m ==> Parameters: 90444263783010300(Long)
+2022-09-07 21:53:15.657 DEBUG c.x.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m <==    Updates: 0
+2022-09-07 21:53:15.658 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{},"message":"成功","success":true}
+2022-09-07 21:53:15.658 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 4 ms==========
+2022-09-07 21:53:15.669 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:53:15.669 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 21:53:15.669 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 21:53:15.669 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:53:15.669 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 21:53:15.670 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 21:53:15.670 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 21:53:15.671 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 21:53:15.671 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档, 100
+2022-09-07 21:53:15.672 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 21:53:15.672 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 21:53:15.672 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 90444263783010304, 100, sdasdsa, 103
+2022-09-07 21:53:15.672 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 21:53:15.672 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 21:53:15.672 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 21:53:15.673 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 21:53:15.673 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 21:53:15.673 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 9
+2022-09-07 21:53:15.674 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":90444263783010304,"name":"sdasdsa","parent":100,"sort":103},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 21:53:15.674 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 5 ms==========
+2022-09-07 21:53:45.280 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:53:45.281 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 21:53:45.281 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 21:53:45.281 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:53:45.281 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 21:53:45.282 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 21:53:45.282 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 21:53:45.283 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 21:53:45.283 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档, 100
+2022-09-07 21:53:45.283 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 21:53:45.284 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 21:53:45.284 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 90444263783010304, 100, sdasdsa, 103
+2022-09-07 21:53:45.284 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 21:53:45.284 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 21:53:45.284 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 21:53:45.284 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 21:53:45.284 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 21:53:45.284 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 9
+2022-09-07 21:53:45.285 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":90444263783010304,"name":"sdasdsa","parent":100,"sort":103},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 21:53:45.286 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 6 ms==========
+2022-09-07 21:53:47.411 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:53:47.411 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/delete/90444263783010300, DELETE
+2022-09-07 21:53:47.411 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, delete
+2022-09-07 21:53:47.411 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:53:47.411 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [90444263783010300]
+2022-09-07 21:53:47.412 DEBUG c.x.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m ==>  Preparing: delete from category where id = ?
+2022-09-07 21:53:47.412 DEBUG c.x.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m ==> Parameters: 90444263783010300(Long)
+2022-09-07 21:53:47.413 DEBUG c.x.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m <==    Updates: 0
+2022-09-07 21:53:47.413 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{},"message":"成功","success":true}
+2022-09-07 21:53:47.413 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 2 ms==========
+2022-09-07 21:53:47.424 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:53:47.424 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 21:53:47.424 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 21:53:47.424 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:53:47.424 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 21:53:47.424 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 21:53:47.425 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 21:53:47.426 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 21:53:47.426 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档, 100
+2022-09-07 21:53:47.426 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 21:53:47.427 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 21:53:47.427 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 90444263783010304, 100, sdasdsa, 103
+2022-09-07 21:53:47.427 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 21:53:47.427 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 21:53:47.427 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 21:53:47.427 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 21:53:47.428 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 21:53:47.428 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 9
+2022-09-07 21:53:47.430 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":90444263783010304,"name":"sdasdsa","parent":100,"sort":103},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 21:53:47.430 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 7 ms==========
+2022-09-07 21:54:43.396 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2022-09-07 21:54:43.548 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-07 21:54:43.550 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-09-07 21:54:43.555 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.14.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.14.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.14.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.14.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.14.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.14.1/java.lang.Thread.run(Thread.java:829)
+2022-09-07 21:54:43.559 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-09-07 21:54:43.570 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-09-07 21:54:43.691 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 12960 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-07 21:54:43.691 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-07 21:54:43.926 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-07 21:54:43.926 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-07 21:54:43.927 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-07 21:54:43.939 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-07 21:54:43.939 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 245 ms
+2022-09-07 21:54:44.261 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-07 21:54:44.273 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-07 21:54:44.276 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.636 seconds (JVM running for 2004.651)
+2022-09-07 21:54:44.276 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-07 21:54:44.277 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-07 21:54:44.277 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-07 21:54:45.675 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2022-09-07 21:54:45.733 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-07 21:54:45.797 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 12960 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-07 21:54:45.797 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-07 21:54:45.971 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-07 21:54:45.972 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-07 21:54:45.972 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-07 21:54:45.983 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-07 21:54:45.983 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 184 ms
+2022-09-07 21:54:46.265 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-07 21:54:46.276 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-07 21:54:46.279 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.506 seconds (JVM running for 2006.655)
+2022-09-07 21:54:46.280 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-07 21:54:46.280 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-07 21:54:46.280 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-07 21:55:04.804 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2022-09-07 21:55:04.870 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-07 21:55:04.949 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 12960 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-07 21:55:04.949 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-07 21:55:05.167 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-07 21:55:05.167 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-07 21:55:05.167 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-07 21:55:05.180 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-07 21:55:05.180 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 229 ms
+2022-09-07 21:55:05.504 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-07 21:55:05.517 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-07 21:55:05.522 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.603 seconds (JVM running for 2025.897)
+2022-09-07 21:55:05.523 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-07 21:55:05.523 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-07 21:55:05.524 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-07 21:55:06.921 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2022-09-07 21:55:06.992 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-07 21:55:07.050 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 12960 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-07 21:55:07.050 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-07 21:55:07.246 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-07 21:55:07.246 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-07 21:55:07.247 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-07 21:55:07.257 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-07 21:55:07.258 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 206 ms
+2022-09-07 21:55:07.524 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-07 21:55:07.534 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-07 21:55:07.537 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.508 seconds (JVM running for 2027.912)
+2022-09-07 21:55:07.537 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-07 21:55:07.537 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-07 21:55:07.538 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-07 21:56:00.337 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2022-09-07 21:56:00.419 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-07 21:56:00.500 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 12960 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-07 21:56:00.501 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-07 21:56:00.716 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-07 21:56:00.717 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-07 21:56:00.717 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-07 21:56:00.730 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-07 21:56:00.730 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 228 ms
+2022-09-07 21:56:01.071 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-07 21:56:01.082 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-07 21:56:01.085 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.617 seconds (JVM running for 2081.461)
+2022-09-07 21:56:01.086 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-07 21:56:01.087 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-07 21:56:01.087 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-07 21:56:02.487 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2022-09-07 21:56:02.546 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-07 21:56:02.605 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 12960 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-07 21:56:02.606 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-07 21:56:02.785 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-07 21:56:02.785 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-07 21:56:02.785 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-07 21:56:02.796 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-07 21:56:02.796 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 189 ms
+2022-09-07 21:56:03.116 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-07 21:56:03.128 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-07 21:56:03.132 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.548 seconds (JVM running for 2083.506)
+2022-09-07 21:56:03.133 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-07 21:56:03.133 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-07 21:56:03.133 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-07 21:56:12.962 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-07 21:56:12.963 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-09-07 21:56:12.964 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-09-07 21:56:12.966 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:56:12.966 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 21:56:12.966 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 21:56:12.966 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:56:12.966 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 21:56:12.973 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2022-09-07 21:56:12.987 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2022-09-07 21:56:12.987 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 21:56:12.987 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 21:56:12.988 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 21:56:12.989 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档, 100
+2022-09-07 21:56:12.989 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 21:56:12.989 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 21:56:12.989 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 90444263783010304, 100, sdasdsa, 103
+2022-09-07 21:56:12.989 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 21:56:12.989 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 21:56:12.989 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 21:56:12.990 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 21:56:12.990 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 21:56:12.990 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 9
+2022-09-07 21:56:12.996 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":90444263783010304,"name":"sdasdsa","parent":100,"sort":103},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 21:56:12.996 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 30 ms==========
+2022-09-07 21:56:19.456 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:56:19.456 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/delete/90444263783010300, DELETE
+2022-09-07 21:56:19.456 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, delete
+2022-09-07 21:56:19.456 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:56:19.457 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [90444263783010300]
+2022-09-07 21:56:19.458 DEBUG c.x.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m ==>  Preparing: delete from category where id = ?
+2022-09-07 21:56:19.458 DEBUG c.x.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m ==> Parameters: 90444263783010300(Long)
+2022-09-07 21:56:19.459 DEBUG c.x.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m <==    Updates: 0
+2022-09-07 21:56:19.459 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{},"message":"成功","success":true}
+2022-09-07 21:56:19.459 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 3 ms==========
+2022-09-07 21:56:19.472 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:56:19.473 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 21:56:19.473 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 21:56:19.473 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:56:19.473 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 21:56:19.473 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 21:56:19.473 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 21:56:19.474 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 21:56:19.474 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档, 100
+2022-09-07 21:56:19.474 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 21:56:19.475 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 21:56:19.475 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 90444263783010304, 100, sdasdsa, 103
+2022-09-07 21:56:19.475 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 21:56:19.475 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 21:56:19.475 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 21:56:19.476 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 21:56:19.477 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 21:56:19.477 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 9
+2022-09-07 21:56:19.480 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":90444263783010304,"name":"sdasdsa","parent":100,"sort":103},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 21:56:19.480 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 8 ms==========
+2022-09-07 21:59:00.610 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 21:59:00.610 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 21:59:00.611 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 21:59:00.611 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 21:59:00.611 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 21:59:00.611 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 21:59:00.612 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 21:59:00.613 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 21:59:00.613 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档, 100
+2022-09-07 21:59:00.613 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 21:59:00.613 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 21:59:00.614 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 90444263783010304, 100, sdasdsa, 103
+2022-09-07 21:59:00.614 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 21:59:00.614 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 21:59:00.614 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 21:59:00.614 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 21:59:00.614 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 21:59:00.615 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 9
+2022-09-07 21:59:00.616 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":90444263783010304,"name":"sdasdsa","parent":100,"sort":103},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 21:59:00.616 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 6 ms==========
+2022-09-07 22:01:11.928 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2022-09-07 22:01:12.006 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-07 22:01:12.007 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-09-07 22:01:12.009 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.14.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.14.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.14.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.14.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.14.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.14.1/java.lang.Thread.run(Thread.java:829)
+2022-09-07 22:01:12.011 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2022-09-07 22:01:12.021 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2022-09-07 22:01:12.085 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 12960 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-07 22:01:12.086 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-07 22:01:12.325 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-07 22:01:12.325 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-07 22:01:12.325 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-07 22:01:12.336 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-07 22:01:12.336 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 249 ms
+2022-09-07 22:01:12.665 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-07 22:01:12.675 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-07 22:01:12.678 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.614 seconds (JVM running for 2393.053)
+2022-09-07 22:01:12.678 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-07 22:01:12.679 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-07 22:01:12.679 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-07 22:01:30.325 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2022-09-07 22:01:30.385 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-07 22:01:30.449 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 12960 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-07 22:01:30.449 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-07 22:01:30.626 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-07 22:01:30.627 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-07 22:01:30.627 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-07 22:01:30.638 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-07 22:01:30.638 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 187 ms
+2022-09-07 22:01:30.927 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-07 22:01:30.937 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-07 22:01:30.940 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.511 seconds (JVM running for 2411.315)
+2022-09-07 22:01:30.940 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-07 22:01:30.940 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-07 22:01:30.941 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-07 22:01:44.997 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-07 22:01:44.997 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-09-07 22:01:44.998 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-09-07 22:01:45.000 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 22:01:45.000 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/delete/90444263783010300, DELETE
+2022-09-07 22:01:45.000 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, delete
+2022-09-07 22:01:45.000 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 22:01:45.001 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: ["90444263783010300"]
+2022-09-07 22:01:45.006 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
+2022-09-07 22:01:45.016 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
+2022-09-07 22:01:45.016 DEBUG c.x.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m ==>  Preparing: delete from category where id = ?
+2022-09-07 22:01:45.017 DEBUG c.x.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m ==> Parameters: 90444263783010300(Long)
+2022-09-07 22:01:45.018 DEBUG c.x.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m <==    Updates: 0
+2022-09-07 22:01:45.019 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{},"message":"成功","success":true}
+2022-09-07 22:01:45.019 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 20 ms==========
+2022-09-07 22:01:45.033 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 22:01:45.033 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 22:01:45.033 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 22:01:45.033 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 22:01:45.034 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 22:01:45.036 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 22:01:45.036 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 22:01:45.037 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 22:01:45.037 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档, 100
+2022-09-07 22:01:45.037 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 22:01:45.037 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 22:01:45.038 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 90444263783010304, 100, sdasdsa, 103
+2022-09-07 22:01:45.038 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 22:01:45.038 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 22:01:45.038 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 22:01:45.038 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 22:01:45.038 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 22:01:45.038 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 9
+2022-09-07 22:01:45.043 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":90444263783010304,"name":"sdasdsa","parent":100,"sort":103},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 22:01:45.043 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 10 ms==========
+2022-09-07 22:05:49.307 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2022-09-07 22:05:49.394 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-07 22:05:49.394 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-09-07 22:05:49.396 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.14.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.14.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.14.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.14.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.14.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.14.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.14.1/java.lang.Thread.run(Thread.java:829)
+2022-09-07 22:05:49.398 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
+2022-09-07 22:05:49.407 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
+2022-09-07 22:05:49.585 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 12960 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-07 22:05:49.586 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-07 22:05:49.964 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-07 22:05:49.965 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-07 22:05:49.965 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-07 22:05:49.978 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-07 22:05:49.978 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 387 ms
+2022-09-07 22:05:50.389 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-07 22:05:50.402 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-07 22:05:50.405 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.916 seconds (JVM running for 2670.78)
+2022-09-07 22:05:50.406 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-07 22:05:50.406 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-07 22:05:50.406 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-07 22:05:51.800 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2022-09-07 22:05:51.858 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-07 22:05:51.921 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 12960 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-07 22:05:51.922 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-07 22:05:52.101 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-07 22:05:52.102 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-07 22:05:52.102 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-07 22:05:52.113 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-07 22:05:52.113 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 190 ms
+2022-09-07 22:05:52.380 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-07 22:05:52.390 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-07 22:05:52.392 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.491 seconds (JVM running for 2672.767)
+2022-09-07 22:05:52.393 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-07 22:05:52.393 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-07 22:05:52.393 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-07 22:06:21.012 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2022-09-07 22:06:21.110 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-07 22:06:21.202 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 12960 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-07 22:06:21.203 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-07 22:06:21.571 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-07 22:06:21.572 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-07 22:06:21.572 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-07 22:06:21.599 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-07 22:06:21.600 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 393 ms
+2022-09-07 22:06:22.201 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-07 22:06:22.213 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-07 22:06:22.216 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 1.051 seconds (JVM running for 2702.592)
+2022-09-07 22:06:22.218 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-07 22:06:22.218 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-07 22:06:22.218 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-07 22:06:23.614 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2022-09-07 22:06:23.673 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-07 22:06:23.816 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 12960 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-09-07 22:06:23.816 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-07 22:06:24.027 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-09-07 22:06:24.028 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-07 22:06:24.028 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-07 22:06:24.038 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-07 22:06:24.038 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 219 ms
+2022-09-07 22:06:24.298 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-07 22:06:24.308 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-09-07 22:06:24.311 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 0.584 seconds (JVM running for 2704.685)
+2022-09-07 22:06:24.311 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-07 22:06:24.311 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-09-07 22:06:24.312 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-09-07 22:06:30.019 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-07 22:06:30.020 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-09-07 22:06:30.020 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-09-07 22:06:30.022 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 22:06:30.022 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 22:06:30.022 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 22:06:30.023 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 22:06:30.023 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 22:06:30.027 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-4 - Starting...
+2022-09-07 22:06:30.039 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-4 - Start completed.
+2022-09-07 22:06:30.039 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 22:06:30.040 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 22:06:30.041 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 22:06:30.041 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档, 100
+2022-09-07 22:06:30.041 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 22:06:30.041 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 22:06:30.041 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 90444263783010304, 100, sdasdsa, 103
+2022-09-07 22:06:30.042 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 22:06:30.042 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 22:06:30.042 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 22:06:30.042 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 22:06:30.042 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 22:06:30.042 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 9
+2022-09-07 22:06:30.049 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":90444263783010304,"name":"sdasdsa","parent":100,"sort":103},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 22:06:30.050 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 28 ms==========
+2022-09-07 22:06:35.485 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 22:06:35.485 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/delete/90444263783010304, DELETE
+2022-09-07 22:06:35.485 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, delete
+2022-09-07 22:06:35.485 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 22:06:35.485 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: ["90444263783010304"]
+2022-09-07 22:06:35.487 DEBUG c.x.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m ==>  Preparing: delete from category where id = ?
+2022-09-07 22:06:35.487 DEBUG c.x.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m ==> Parameters: 90444263783010304(Long)
+2022-09-07 22:06:35.492 DEBUG c.x.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m <==    Updates: 1
+2022-09-07 22:06:35.493 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{},"message":"成功","success":true}
+2022-09-07 22:06:35.493 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 8 ms==========
+2022-09-07 22:06:35.507 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-09-07 22:06:35.507 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/category/all, GET
+2022-09-07 22:06:35.508 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.CategoryController, all
+2022-09-07 22:06:35.508 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-09-07 22:06:35.508 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: []
+2022-09-07 22:06:35.508 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-09-07 22:06:35.508 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2022-09-07 22:06:35.509 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-07 22:06:35.510 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, Love Letter Framwrok 文档, 100
+2022-09-07 22:06:35.510 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, 开始文档, 101
+2022-09-07 22:06:35.510 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, 设计文档, 102
+2022-09-07 22:06:35.510 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, ToolBox 文档合集, 200
+2022-09-07 22:06:35.510 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, ToolBox wiki Api 接口, 201
+2022-09-07 22:06:35.510 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, ToolBox wiki 设计文档, 202
+2022-09-07 22:06:35.510 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, LoLe UI 文档合集, 300
+2022-09-07 22:06:35.511 TRACE c.xion.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, Love Letter UI 设计思路, 301
+2022-09-07 22:06:35.511 DEBUG c.xion.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 8
+2022-09-07 22:06:35.513 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"id":100,"name":"Love Letter Framwrok 文档","parent":0,"sort":100},{"id":101,"name":"开始文档","parent":100,"sort":101},{"id":102,"name":"设计文档","parent":100,"sort":102},{"id":200,"name":"ToolBox 文档合集","parent":0,"sort":200},{"id":201,"name":"ToolBox wiki Api 接口","parent":200,"sort":201},{"id":202,"name":"ToolBox wiki 设计文档","parent":200,"sort":202},{"id":300,"name":"LoLe UI 文档合集","parent":0,"sort":300},{"id":301,"name":"Love Letter UI 设计思路","parent":300,"sort":301}]},"message":"成功","success":true}
+2022-09-07 22:06:35.513 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 6 ms==========
