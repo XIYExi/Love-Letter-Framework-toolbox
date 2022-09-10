@@ -16,5 +16,7 @@ public class EbookQueryReq extends PageReq{
 
     private String name;
 
+    private Long categoryId2;
+
 }
 
