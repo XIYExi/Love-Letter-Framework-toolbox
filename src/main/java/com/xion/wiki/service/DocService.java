@@ -18,4 +18,10 @@ public interface DocService {
     public abstract void delete(Long id);
 
     public abstract void delete(List<String> ids);
+
+    public abstract String findContent(Long id);
+
+    public abstract void vote(Long id);
+
+    public void updateEbookInfo();
 }

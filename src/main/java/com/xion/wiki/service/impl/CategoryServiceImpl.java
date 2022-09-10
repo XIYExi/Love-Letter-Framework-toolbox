@@ -31,6 +31,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Autowired
     private SnowFlake snowFlake;
 
+    @Override
     public List<CategoryQueryResp> all() {
         CategoryExample categoryExample = new CategoryExample();
         categoryExample.setOrderByClause("sort asc");
@@ -40,6 +41,7 @@ public class CategoryServiceImpl implements CategoryService {
         return list;
     }
 
+    @Override
     public PageResp<CategoryQueryResp> list(CategoryQueryReq req) {
         CategoryExample categoryExample = new CategoryExample();
         categoryExample.setOrderByClause("sort asc");
@@ -74,6 +76,7 @@ public class CategoryServiceImpl implements CategoryService {
     /**
      * 保存
      */
+    @Override
     public void save(CategorySaveReq req) {
         Category category = CopyUtil.copy(req, Category.class);
         if (ObjectUtils.isEmpty(req.getId())) {
@@ -86,6 +89,8 @@ public class CategoryServiceImpl implements CategoryService {
         }
     }
 
+
+    @Override
     public void delete(Long id) {
         categoryMapper.deleteByPrimaryKey(id);
     }

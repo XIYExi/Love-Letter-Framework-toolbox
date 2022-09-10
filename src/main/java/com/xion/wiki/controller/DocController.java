@@ -41,8 +41,16 @@ public class DocController {
     @DeleteMapping("/delete/{idsStr}")
     public R delete(@PathVariable String idsStr) {
         List<String> list = Arrays.asList(idsStr.split(","));
+
+        System.err.println(list);
         docService.delete(list);
         return R.ok();
+    }
+
+    @GetMapping("/find-content/{id}")
+    public R findContent(@PathVariable Long id) {
+        String content = docService.findContent(id);
+        return R.ok().data("list", content);
     }
 
 }

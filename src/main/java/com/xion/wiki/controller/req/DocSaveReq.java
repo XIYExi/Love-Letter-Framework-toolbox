@@ -1,5 +1,7 @@
 package com.xion.wiki.controller.req;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,11 +15,15 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 @ToString
 public class DocSaveReq {
+
+    @JsonSerialize(using= ToStringSerializer.class)
     private Long id;
 
+    @JsonSerialize(using= ToStringSerializer.class)
     @NotNull(message = "【电子书】不能为空")
     private Long ebookId;
 
+    @JsonSerialize(using= ToStringSerializer.class)
     @NotNull(message = "【父文档】不能为空")
     private Long parent;
 
