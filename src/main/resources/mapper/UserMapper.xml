@@ -2,16 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xion.wiki.mapper.UserMapper">
   <resultMap id="BaseResultMap" type="com.xion.wiki.domain.User">
-    <id column="userid" jdbcType="INTEGER" property="userid" />
-    <result column="username" jdbcType="VARCHAR" property="username" />
-    <result column="password" jdbcType="VARCHAR" property="password" />
-    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
-    <result column="avatar" jdbcType="VARCHAR" property="avatar" />
-    <result column="qq" jdbcType="VARCHAR" property="qq" />
-    <result column="role" jdbcType="VARCHAR" property="role" />
-    <result column="credit" jdbcType="INTEGER" property="credit" />
-    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
-    <result column="updatetime" jdbcType="TIMESTAMP" property="updatetime" />
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="login_name" jdbcType="VARCHAR" property="loginName" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="password" jdbcType="CHAR" property="password" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -72,7 +66,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    userid, username, `password`, nickname, avatar, qq, `role`, credit, createtime, updatetime
+    id, login_name, `name`, `password`
   </sql>
   <select id="selectByExample" parameterType="com.xion.wiki.domain.UserExample" resultMap="BaseResultMap">
     select
@@ -88,15 +82,15 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from user
-    where userid = #{userid,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from user
-    where userid = #{userid,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
   </delete>
   <delete id="deleteByExample" parameterType="com.xion.wiki.domain.UserExample">
     delete from user
@@ -105,79 +99,39 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.xion.wiki.domain.User">
-    insert into user (userid, username, `password`, 
-      nickname, avatar, qq, 
-      `role`, credit, createtime, 
-      updatetime)
-    values (#{userid,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{nickname,jdbcType=VARCHAR}, #{avatar,jdbcType=VARCHAR}, #{qq,jdbcType=VARCHAR}, 
-      #{role,jdbcType=VARCHAR}, #{credit,jdbcType=INTEGER}, #{createtime,jdbcType=TIMESTAMP}, 
-      #{updatetime,jdbcType=TIMESTAMP})
+    insert into user (id, login_name, `name`, 
+      `password`)
+    values (#{id,jdbcType=BIGINT}, #{loginName,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+      #{password,jdbcType=CHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.xion.wiki.domain.User">
     insert into user
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="userid != null">
-        userid,
+      <if test="id != null">
+        id,
       </if>
-      <if test="username != null">
-        username,
+      <if test="loginName != null">
+        login_name,
+      </if>
+      <if test="name != null">
+        `name`,
       </if>
       <if test="password != null">
         `password`,
       </if>
-      <if test="nickname != null">
-        nickname,
-      </if>
-      <if test="avatar != null">
-        avatar,
-      </if>
-      <if test="qq != null">
-        qq,
-      </if>
-      <if test="role != null">
-        `role`,
-      </if>
-      <if test="credit != null">
-        credit,
-      </if>
-      <if test="createtime != null">
-        createtime,
-      </if>
-      <if test="updatetime != null">
-        updatetime,
-      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="userid != null">
-        #{userid,jdbcType=INTEGER},
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
       </if>
-      <if test="username != null">
-        #{username,jdbcType=VARCHAR},
+      <if test="loginName != null">
+        #{loginName,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
       </if>
       <if test="password != null">
-        #{password,jdbcType=VARCHAR},
-      </if>
-      <if test="nickname != null">
-        #{nickname,jdbcType=VARCHAR},
-      </if>
-      <if test="avatar != null">
-        #{avatar,jdbcType=VARCHAR},
-      </if>
-      <if test="qq != null">
-        #{qq,jdbcType=VARCHAR},
-      </if>
-      <if test="role != null">
-        #{role,jdbcType=VARCHAR},
-      </if>
-      <if test="credit != null">
-        #{credit,jdbcType=INTEGER},
-      </if>
-      <if test="createtime != null">
-        #{createtime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="updatetime != null">
-        #{updatetime,jdbcType=TIMESTAMP},
+        #{password,jdbcType=CHAR},
       </if>
     </trim>
   </insert>
@@ -190,35 +144,17 @@
   <update id="updateByExampleSelective" parameterType="map">
     update user
     <set>
-      <if test="record.userid != null">
-        userid = #{record.userid,jdbcType=INTEGER},
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=BIGINT},
       </if>
-      <if test="record.username != null">
-        username = #{record.username,jdbcType=VARCHAR},
+      <if test="record.loginName != null">
+        login_name = #{record.loginName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.name != null">
+        `name` = #{record.name,jdbcType=VARCHAR},
       </if>
       <if test="record.password != null">
-        `password` = #{record.password,jdbcType=VARCHAR},
-      </if>
-      <if test="record.nickname != null">
-        nickname = #{record.nickname,jdbcType=VARCHAR},
-      </if>
-      <if test="record.avatar != null">
-        avatar = #{record.avatar,jdbcType=VARCHAR},
-      </if>
-      <if test="record.qq != null">
-        qq = #{record.qq,jdbcType=VARCHAR},
-      </if>
-      <if test="record.role != null">
-        `role` = #{record.role,jdbcType=VARCHAR},
-      </if>
-      <if test="record.credit != null">
-        credit = #{record.credit,jdbcType=INTEGER},
-      </if>
-      <if test="record.createtime != null">
-        createtime = #{record.createtime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="record.updatetime != null">
-        updatetime = #{record.updatetime,jdbcType=TIMESTAMP},
+        `password` = #{record.password,jdbcType=CHAR},
       </if>
     </set>
     <if test="_parameter != null">
@@ -227,16 +163,10 @@
   </update>
   <update id="updateByExample" parameterType="map">
     update user
-    set userid = #{record.userid,jdbcType=INTEGER},
-      username = #{record.username,jdbcType=VARCHAR},
-      `password` = #{record.password,jdbcType=VARCHAR},
-      nickname = #{record.nickname,jdbcType=VARCHAR},
-      avatar = #{record.avatar,jdbcType=VARCHAR},
-      qq = #{record.qq,jdbcType=VARCHAR},
-      `role` = #{record.role,jdbcType=VARCHAR},
-      credit = #{record.credit,jdbcType=INTEGER},
-      createtime = #{record.createtime,jdbcType=TIMESTAMP},
-      updatetime = #{record.updatetime,jdbcType=TIMESTAMP}
+    set id = #{record.id,jdbcType=BIGINT},
+      login_name = #{record.loginName,jdbcType=VARCHAR},
+      `name` = #{record.name,jdbcType=VARCHAR},
+      `password` = #{record.password,jdbcType=CHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -244,47 +174,23 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.xion.wiki.domain.User">
     update user
     <set>
-      <if test="username != null">
-        username = #{username,jdbcType=VARCHAR},
+      <if test="loginName != null">
+        login_name = #{loginName,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        `name` = #{name,jdbcType=VARCHAR},
       </if>
       <if test="password != null">
-        `password` = #{password,jdbcType=VARCHAR},
-      </if>
-      <if test="nickname != null">
-        nickname = #{nickname,jdbcType=VARCHAR},
-      </if>
-      <if test="avatar != null">
-        avatar = #{avatar,jdbcType=VARCHAR},
-      </if>
-      <if test="qq != null">
-        qq = #{qq,jdbcType=VARCHAR},
-      </if>
-      <if test="role != null">
-        `role` = #{role,jdbcType=VARCHAR},
-      </if>
-      <if test="credit != null">
-        credit = #{credit,jdbcType=INTEGER},
-      </if>
-      <if test="createtime != null">
-        createtime = #{createtime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="updatetime != null">
-        updatetime = #{updatetime,jdbcType=TIMESTAMP},
+        `password` = #{password,jdbcType=CHAR},
       </if>
     </set>
-    where userid = #{userid,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.xion.wiki.domain.User">
     update user
-    set username = #{username,jdbcType=VARCHAR},
-      `password` = #{password,jdbcType=VARCHAR},
-      nickname = #{nickname,jdbcType=VARCHAR},
-      avatar = #{avatar,jdbcType=VARCHAR},
-      qq = #{qq,jdbcType=VARCHAR},
-      `role` = #{role,jdbcType=VARCHAR},
-      credit = #{credit,jdbcType=INTEGER},
-      createtime = #{createtime,jdbcType=TIMESTAMP},
-      updatetime = #{updatetime,jdbcType=TIMESTAMP}
-    where userid = #{userid,jdbcType=INTEGER}
+    set login_name = #{loginName,jdbcType=VARCHAR},
+      `name` = #{name,jdbcType=VARCHAR},
+      `password` = #{password,jdbcType=CHAR}
+    where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

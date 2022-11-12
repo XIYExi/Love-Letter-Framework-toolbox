@@ -1,6 +1,6 @@
-package com.xion.wiki.domain;
+package com.xion.wiki.controller.resp;
 
-public class User {
+public class UserQueryResp {
     private Long id;
 
     private String loginName;

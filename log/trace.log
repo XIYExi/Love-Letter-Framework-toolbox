@@ -575,3 +575,543 @@ Caused by: java.lang.NumberFormatException: For input string: "undefined"
 2022-11-12 22:47:35.022 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2022-11-12 22:47:35.023 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
 2022-11-12 22:47:35.023 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-11-12 23:01:56.117 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 7 class path changes (0 additions, 6 deletions, 1 modification)
+2022-11-12 23:01:56.282 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-7065"]
+2022-11-12 23:01:56.282 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-11-12 23:01:56.287 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-7065"]
+2022-11-12 23:01:56.290 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-7065"]
+2022-11-12 23:01:56.412 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 10424 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-11-12 23:01:56.413 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-11-12 23:01:56.835 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-11-12 23:01:56.857 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-11-12 23:01:56.857 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-11-12 23:01:56.858 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-11-12 23:01:56.899 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-11-12 23:01:56.899 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 483 ms
+2022-11-12 23:01:57.048 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryController': Unsatisfied dependency expressed through field 'categoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryServiceImpl': Unsatisfied dependency expressed through field 'categoryMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryMapper' defined in file [D:\vue_springboot wiki\wiki_api\target\classes\com\xion\wiki\mapper\CategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\vue_springboot wiki\wiki_api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\vue_springboot wiki\wiki_api\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xion.wiki.domain.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xion.wiki.domain.User
+2022-11-12 23:01:57.049 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-11-12 23:01:57.055 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-12 23:01:57.087 ERROR org.springframework.boot.SpringApplication        :824  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryController': Unsatisfied dependency expressed through field 'categoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryServiceImpl': Unsatisfied dependency expressed through field 'categoryMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryMapper' defined in file [D:\vue_springboot wiki\wiki_api\target\classes\com\xion\wiki\mapper\CategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\vue_springboot wiki\wiki_api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\vue_springboot wiki\wiki_api\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xion.wiki.domain.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xion.wiki.domain.User
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at com.xion.wiki.WikiApiApplication.main(WikiApiApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryServiceImpl': Unsatisfied dependency expressed through field 'categoryMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryMapper' defined in file [D:\vue_springboot wiki\wiki_api\target\classes\com\xion\wiki\mapper\CategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\vue_springboot wiki\wiki_api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\vue_springboot wiki\wiki_api\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xion.wiki.domain.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xion.wiki.domain.User
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 23 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryMapper' defined in file [D:\vue_springboot wiki\wiki_api\target\classes\com\xion\wiki\mapper\CategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\vue_springboot wiki\wiki_api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\vue_springboot wiki\wiki_api\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xion.wiki.domain.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xion.wiki.domain.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1534)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 37 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\vue_springboot wiki\wiki_api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\vue_springboot wiki\wiki_api\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xion.wiki.domain.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xion.wiki.domain.User
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1519)
+	... 48 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\vue_springboot wiki\wiki_api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\vue_springboot wiki\wiki_api\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xion.wiki.domain.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xion.wiki.domain.User
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 61 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\vue_springboot wiki\wiki_api\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\vue_springboot wiki\wiki_api\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xion.wiki.domain.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xion.wiki.domain.User
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:612)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:490)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:632)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:180)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b0cedca5.CGLIB$sqlSessionFactory$1(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b0cedca5$$FastClassBySpringCGLIB$$2cf77fd1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b0cedca5.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 62 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\vue_springboot wiki\wiki_api\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xion.wiki.domain.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xion.wiki.domain.User
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:610)
+	... 75 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xion.wiki.domain.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xion.wiki.domain.User
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
+	... 77 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xion.wiki.domain.User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xion.wiki.domain.User
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 81 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.xion.wiki.domain.User
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 83 common frames omitted
+2022-11-12 23:02:40.961 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 10424 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-11-12 23:02:40.961 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-11-12 23:02:41.148 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-11-12 23:02:41.149 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-11-12 23:02:41.149 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-11-12 23:02:41.149 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-11-12 23:02:41.159 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-11-12 23:02:41.160 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 197 ms
+2022-11-12 23:02:41.259 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'userService' is expected to be of type 'com.xion.wiki.service.impl.UserServiceImpl' but was actually of type 'com.sun.proxy.$Proxy138'
+2022-11-12 23:02:41.260 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-11-12 23:02:41.263 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-12 23:02:41.265 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userService' could not be injected because it is a JDK dynamic proxy
+
+The bean is of type 'com.sun.proxy.$Proxy138' and implements:
+	com.xion.wiki.service.UserService
+
+Expected a bean of type 'com.xion.wiki.service.impl.UserServiceImpl' which implements:
+	com.xion.wiki.service.UserService
+
+
+Action:
+
+Consider injecting the bean as one of its interfaces or forcing the use of CGLib-based proxies by setting proxyTargetClass=true on @EnableAsync and/or @EnableCaching.
+
+2022-11-12 23:02:54.905 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.4.Final
+2022-11-12 23:02:54.907 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 8128 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-11-12 23:02:54.908 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-11-12 23:02:54.945 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-12 23:02:54.946 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-12 23:02:55.819 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-11-12 23:02:55.825 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-11-12 23:02:55.826 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-11-12 23:02:55.826 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-11-12 23:02:55.869 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-11-12 23:02:55.870 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 924 ms
+2022-11-12 23:02:56.188 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'userService' is expected to be of type 'com.xion.wiki.service.impl.UserServiceImpl' but was actually of type 'com.sun.proxy.$Proxy88'
+2022-11-12 23:02:56.191 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-11-12 23:02:56.200 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-12 23:02:56.213 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userService' could not be injected because it is a JDK dynamic proxy
+
+The bean is of type 'com.sun.proxy.$Proxy88' and implements:
+	com.xion.wiki.service.UserService
+
+Expected a bean of type 'com.xion.wiki.service.impl.UserServiceImpl' which implements:
+	com.xion.wiki.service.UserService
+
+
+Action:
+
+Consider injecting the bean as one of its interfaces or forcing the use of CGLib-based proxies by setting proxyTargetClass=true on @EnableAsync and/or @EnableCaching.
+
+2022-11-12 23:03:29.176 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.4.Final
+2022-11-12 23:03:29.178 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 9176 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-11-12 23:03:29.179 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-11-12 23:03:29.219 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-12 23:03:29.220 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-12 23:03:30.123 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-11-12 23:03:30.130 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-11-12 23:03:30.130 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-11-12 23:03:30.130 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-11-12 23:03:30.176 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-11-12 23:03:30.176 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 956 ms
+2022-11-12 23:03:30.468 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'userService' is expected to be of type 'com.xion.wiki.service.impl.UserServiceImpl' but was actually of type 'com.sun.proxy.$Proxy88'
+2022-11-12 23:03:30.493 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-11-12 23:03:30.503 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-12 23:03:30.517 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userService' could not be injected because it is a JDK dynamic proxy
+
+The bean is of type 'com.sun.proxy.$Proxy88' and implements:
+	com.xion.wiki.service.UserService
+
+Expected a bean of type 'com.xion.wiki.service.impl.UserServiceImpl' which implements:
+	com.xion.wiki.service.UserService
+
+
+Action:
+
+Consider injecting the bean as one of its interfaces or forcing the use of CGLib-based proxies by setting proxyTargetClass=true on @EnableAsync and/or @EnableCaching.
+
+2022-11-12 23:04:14.796 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.4.Final
+2022-11-12 23:04:14.798 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 1564 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-11-12 23:04:14.799 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-11-12 23:04:14.840 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-12 23:04:14.840 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-12 23:04:15.822 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-11-12 23:04:15.829 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-11-12 23:04:15.829 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-11-12 23:04:15.830 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-11-12 23:04:15.876 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-11-12 23:04:15.877 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1037 ms
+2022-11-12 23:04:16.673 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-11-12 23:04:16.693 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-7065"]
+2022-11-12 23:04:16.708 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-11-12 23:04:16.719 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 2.268 seconds (JVM running for 3.385)
+2022-11-12 23:04:16.721 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-11-12 23:04:16.722 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-11-12 23:04:23.406 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.4.Final
+2022-11-12 23:04:23.409 INFO  com.xion.wiki.WikiApiApplication                  :55   [32m                  [0;39m Starting WikiApiApplication using Java 11.0.14.1 on DESKTOP-G1DPRFD with PID 3772 (D:\vue_springboot wiki\wiki_api\target\classes started by xiye in D:\vue_springboot wiki\wiki_api)
+2022-11-12 23:04:23.410 INFO  com.xion.wiki.WikiApiApplication                  :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-11-12 23:04:23.450 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-12 23:04:23.450 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-12 23:04:24.392 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 7065 (http)
+2022-11-12 23:04:24.398 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-7065"]
+2022-11-12 23:04:24.399 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-11-12 23:04:24.399 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-11-12 23:04:24.448 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-11-12 23:04:24.448 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 998 ms
+2022-11-12 23:04:25.189 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-11-12 23:04:25.212 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-7065"]
+2022-11-12 23:04:25.228 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 7065 (http) with context path ''
+2022-11-12 23:04:25.240 INFO  com.xion.wiki.WikiApiApplication                  :61   [32m                  [0;39m Started WikiApiApplication in 2.204 seconds (JVM running for 2.846)
+2022-11-12 23:04:25.242 INFO  com.xion.wiki.WikiApiApplication                  :19   [32m                  [0;39m 启动成功！
+2022-11-12 23:04:25.242 INFO  com.xion.wiki.WikiApiApplication                  :20   [32m                  [0;39m 地址: 	http://127.0.0.1:7065
+2022-11-12 23:09:42.738 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-12 23:09:42.738 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-11-12 23:09:42.739 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-11-12 23:09:42.771 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-11-12 23:09:42.772 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/doc/all/1, GET
+2022-11-12 23:09:42.772 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.DocController, all
+2022-11-12 23:09:42.773 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-12 23:09:42.797 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [1]
+2022-11-12 23:09:42.836 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-11-12 23:09:43.042 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-11-12 23:09:43.048 DEBUG com.xion.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc WHERE ( ebook_id = ? ) order by sort asc
+2022-11-12 23:09:43.064 DEBUG com.xion.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 1(Long)
+2022-11-12 23:09:43.078 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2022-11-12 23:09:43.079 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2022-11-12 23:09:43.080 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2022-11-12 23:09:43.080 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2022-11-12 23:09:43.080 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.3, 1, 0, 0
+2022-11-12 23:09:43.081 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 114373342592634880, 1, 0, Test1, 1, 0, 0
+2022-11-12 23:09:43.081 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2022-11-12 23:09:43.082 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2022-11-12 23:09:43.082 DEBUG com.xion.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 7
+2022-11-12 23:09:43.110 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.3","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":114373342592634880,"name":"Test1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}]},"message":"成功","success":true}
+2022-11-12 23:09:43.110 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 340 ms==========
+2022-11-12 23:10:09.752 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-11-12 23:10:09.753 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/doc/all/1, GET
+2022-11-12 23:10:09.753 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.DocController, all
+2022-11-12 23:10:09.753 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-12 23:10:09.753 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [1]
+2022-11-12 23:10:09.755 DEBUG com.xion.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc WHERE ( ebook_id = ? ) order by sort asc
+2022-11-12 23:10:09.756 DEBUG com.xion.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 1(Long)
+2022-11-12 23:10:09.757 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2022-11-12 23:10:09.757 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2022-11-12 23:10:09.758 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2022-11-12 23:10:09.758 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2022-11-12 23:10:09.758 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.3, 1, 0, 0
+2022-11-12 23:10:09.758 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 114373342592634880, 1, 0, Test1, 1, 0, 0
+2022-11-12 23:10:09.759 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2022-11-12 23:10:09.759 TRACE com.xion.wiki.mapper.DocMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2022-11-12 23:10:09.759 DEBUG com.xion.wiki.mapper.DocMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 7
+2022-11-12 23:10:09.761 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.3","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":114373342592634880,"name":"Test1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0}]},"message":"成功","success":true}
+2022-11-12 23:10:09.761 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 9 ms==========
+2022-11-12 23:10:17.077 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-11-12 23:10:17.078 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/user/list, GET
+2022-11-12 23:10:17.078 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.UserController, list
+2022-11-12 23:10:17.078 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-12 23:10:17.080 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-11-12 23:10:17.116 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-11-12 23:10:17.117 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-11-12 23:10:17.118 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-11-12 23:10:17.119 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 0
+2022-11-12 23:10:17.119 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:10:17.121 INFO  com.xion.wiki.service.UserService                 :52   [32m                  [0;39m 总行数：0
+2022-11-12 23:10:17.121 INFO  com.xion.wiki.service.UserService                 :53   [32m                  [0;39m 总页数：0
+2022-11-12 23:10:17.123 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[],"total":0}},"message":"成功","success":true}
+2022-11-12 23:10:17.123 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 46 ms==========
+2022-11-12 23:10:50.208 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-11-12 23:10:50.209 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/user/list, GET
+2022-11-12 23:10:50.209 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.UserController, list
+2022-11-12 23:10:50.209 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-12 23:10:50.209 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-11-12 23:10:50.211 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-11-12 23:10:50.211 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-11-12 23:10:50.213 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-11-12 23:10:50.213 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 1
+2022-11-12 23:10:50.213 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:10:50.215 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-11-12 23:10:50.216 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-11-12 23:10:50.217 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2022-11-12 23:10:50.218 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, xiye, xiye, 123456
+2022-11-12 23:10:50.218 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:10:50.219 INFO  com.xion.wiki.service.UserService                 :52   [32m                  [0;39m 总行数：1
+2022-11-12 23:10:50.220 INFO  com.xion.wiki.service.UserService                 :53   [32m                  [0;39m 总页数：1
+2022-11-12 23:10:50.226 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[{"id":1,"loginName":"xiye","name":"xiye"}],"total":1}},"message":"成功","success":true}
+2022-11-12 23:10:50.227 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 19 ms==========
+2022-11-12 23:12:42.706 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-11-12 23:12:42.707 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/user/list, GET
+2022-11-12 23:12:42.707 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.UserController, list
+2022-11-12 23:12:42.708 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-12 23:12:42.708 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-11-12 23:12:42.710 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-11-12 23:12:42.711 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-11-12 23:12:42.712 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-11-12 23:12:42.713 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 1
+2022-11-12 23:12:42.713 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:12:42.713 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-11-12 23:12:42.714 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-11-12 23:12:42.714 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2022-11-12 23:12:42.715 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, xiye, xiye, 123456
+2022-11-12 23:12:42.715 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:12:42.715 INFO  com.xion.wiki.service.UserService                 :52   [32m                  [0;39m 总行数：1
+2022-11-12 23:12:42.715 INFO  com.xion.wiki.service.UserService                 :53   [32m                  [0;39m 总页数：1
+2022-11-12 23:12:42.716 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[{"id":1,"loginName":"xiye","name":"xiye"}],"total":1}},"message":"成功","success":true}
+2022-11-12 23:12:42.716 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 10 ms==========
+2022-11-12 23:13:18.723 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-11-12 23:13:18.724 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/user/list, GET
+2022-11-12 23:13:18.724 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.UserController, list
+2022-11-12 23:13:18.725 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-12 23:13:18.725 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-11-12 23:13:18.727 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-11-12 23:13:18.728 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-11-12 23:13:18.729 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-11-12 23:13:18.730 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 1
+2022-11-12 23:13:18.730 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:13:18.730 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-11-12 23:13:18.731 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-11-12 23:13:18.731 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2022-11-12 23:13:18.731 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, xiye, xiye, 123456
+2022-11-12 23:13:18.732 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:13:18.732 INFO  com.xion.wiki.service.UserService                 :52   [32m                  [0;39m 总行数：1
+2022-11-12 23:13:18.732 INFO  com.xion.wiki.service.UserService                 :53   [32m                  [0;39m 总页数：1
+2022-11-12 23:13:18.732 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[{"id":1,"loginName":"xiye","name":"xiye"}],"total":1}},"message":"成功","success":true}
+2022-11-12 23:13:18.733 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 10 ms==========
+2022-11-12 23:13:23.706 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-11-12 23:13:23.706 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/user/list, GET
+2022-11-12 23:13:23.707 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.UserController, list
+2022-11-12 23:13:23.707 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-12 23:13:23.707 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-11-12 23:13:23.708 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-11-12 23:13:23.708 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-11-12 23:13:23.710 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-11-12 23:13:23.710 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 1
+2022-11-12 23:13:23.710 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:13:23.711 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-11-12 23:13:23.711 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-11-12 23:13:23.712 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2022-11-12 23:13:23.713 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, xiye, xiye, 123456
+2022-11-12 23:13:23.713 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:13:23.713 INFO  com.xion.wiki.service.UserService                 :52   [32m                  [0;39m 总行数：1
+2022-11-12 23:13:23.713 INFO  com.xion.wiki.service.UserService                 :53   [32m                  [0;39m 总页数：1
+2022-11-12 23:13:23.714 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[{"id":1,"loginName":"xiye","name":"xiye"}],"total":1}},"message":"成功","success":true}
+2022-11-12 23:13:23.714 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 8 ms==========
+2022-11-12 23:13:33.009 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-11-12 23:13:33.010 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/user/list, GET
+2022-11-12 23:13:33.010 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.UserController, list
+2022-11-12 23:13:33.010 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-12 23:13:33.010 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-11-12 23:13:33.013 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-11-12 23:13:33.013 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-11-12 23:13:33.015 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-11-12 23:13:33.016 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 1
+2022-11-12 23:13:33.016 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:13:33.017 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-11-12 23:13:33.017 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-11-12 23:13:33.018 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2022-11-12 23:13:33.019 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, xiye, xiye, 123456
+2022-11-12 23:13:33.019 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:13:33.019 INFO  com.xion.wiki.service.UserService                 :52   [32m                  [0;39m 总行数：1
+2022-11-12 23:13:33.020 INFO  com.xion.wiki.service.UserService                 :53   [32m                  [0;39m 总页数：1
+2022-11-12 23:13:33.020 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[{"id":1,"loginName":"xiye","name":"xiye"}],"total":1}},"message":"成功","success":true}
+2022-11-12 23:13:33.020 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 11 ms==========
+2022-11-12 23:13:36.079 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-11-12 23:13:36.080 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/user/list, GET
+2022-11-12 23:13:36.080 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.UserController, list
+2022-11-12 23:13:36.080 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-12 23:13:36.080 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-11-12 23:13:36.082 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-11-12 23:13:36.082 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-11-12 23:13:36.083 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-11-12 23:13:36.084 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 1
+2022-11-12 23:13:36.084 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:13:36.085 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-11-12 23:13:36.086 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-11-12 23:13:36.087 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2022-11-12 23:13:36.087 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, xiye, xiye, 123456
+2022-11-12 23:13:36.087 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:13:36.088 INFO  com.xion.wiki.service.UserService                 :52   [32m                  [0;39m 总行数：1
+2022-11-12 23:13:36.088 INFO  com.xion.wiki.service.UserService                 :53   [32m                  [0;39m 总页数：1
+2022-11-12 23:13:36.088 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[{"id":1,"loginName":"xiye","name":"xiye"}],"total":1}},"message":"成功","success":true}
+2022-11-12 23:13:36.088 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 9 ms==========
+2022-11-12 23:14:08.994 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-11-12 23:14:08.994 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/user/list, GET
+2022-11-12 23:14:08.994 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.UserController, list
+2022-11-12 23:14:08.995 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-12 23:14:08.995 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-11-12 23:14:08.996 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-11-12 23:14:08.997 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-11-12 23:14:09.000 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-11-12 23:14:09.000 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 1
+2022-11-12 23:14:09.000 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:14:09.001 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-11-12 23:14:09.002 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-11-12 23:14:09.003 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2022-11-12 23:14:09.003 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, xiye, xiye, 123456
+2022-11-12 23:14:09.003 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:14:09.003 INFO  com.xion.wiki.service.UserService                 :52   [32m                  [0;39m 总行数：1
+2022-11-12 23:14:09.003 INFO  com.xion.wiki.service.UserService                 :53   [32m                  [0;39m 总页数：1
+2022-11-12 23:14:09.003 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[{"id":1,"loginName":"xiye","name":"xiye"}],"total":1}},"message":"成功","success":true}
+2022-11-12 23:14:09.003 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 9 ms==========
+2022-11-12 23:14:58.598 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-11-12 23:14:58.599 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/user/list, GET
+2022-11-12 23:14:58.599 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.UserController, list
+2022-11-12 23:14:58.599 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-12 23:14:58.599 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-11-12 23:14:58.601 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-11-12 23:14:58.601 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-11-12 23:14:58.603 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-11-12 23:14:58.603 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 1
+2022-11-12 23:14:58.603 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:14:58.604 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-11-12 23:14:58.604 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-11-12 23:14:58.605 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2022-11-12 23:14:58.605 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, xiye, xiye, 123456
+2022-11-12 23:14:58.606 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:14:58.606 INFO  com.xion.wiki.service.UserService                 :52   [32m                  [0;39m 总行数：1
+2022-11-12 23:14:58.606 INFO  com.xion.wiki.service.UserService                 :53   [32m                  [0;39m 总页数：1
+2022-11-12 23:14:58.606 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[{"id":1,"loginName":"xiye","name":"xiye"}],"total":1}},"message":"成功","success":true}
+2022-11-12 23:14:58.606 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 8 ms==========
+2022-11-12 23:16:03.412 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-11-12 23:16:03.412 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/user/list, GET
+2022-11-12 23:16:03.413 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.UserController, list
+2022-11-12 23:16:03.413 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-12 23:16:03.413 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-11-12 23:16:03.415 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-11-12 23:16:03.415 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-11-12 23:16:03.417 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-11-12 23:16:03.417 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 1
+2022-11-12 23:16:03.417 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:16:03.418 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-11-12 23:16:03.419 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-11-12 23:16:03.419 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2022-11-12 23:16:03.419 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, xiye, xiye, 123456
+2022-11-12 23:16:03.420 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:16:03.420 INFO  com.xion.wiki.service.UserService                 :52   [32m                  [0;39m 总行数：1
+2022-11-12 23:16:03.420 INFO  com.xion.wiki.service.UserService                 :53   [32m                  [0;39m 总页数：1
+2022-11-12 23:16:03.420 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[{"id":1,"loginName":"xiye","name":"xiye"}],"total":1}},"message":"成功","success":true}
+2022-11-12 23:16:03.420 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 8 ms==========
+2022-11-12 23:16:28.905 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-11-12 23:16:28.906 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/user/list, GET
+2022-11-12 23:16:28.906 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.UserController, list
+2022-11-12 23:16:28.906 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-12 23:16:28.906 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-11-12 23:16:28.909 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-11-12 23:16:28.909 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-11-12 23:16:28.910 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-11-12 23:16:28.911 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 1
+2022-11-12 23:16:28.911 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:16:28.911 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-11-12 23:16:28.911 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-11-12 23:16:28.912 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2022-11-12 23:16:28.913 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, xiye, xiye, 123456
+2022-11-12 23:16:28.913 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:16:28.914 INFO  com.xion.wiki.service.UserService                 :52   [32m                  [0;39m 总行数：1
+2022-11-12 23:16:28.914 INFO  com.xion.wiki.service.UserService                 :53   [32m                  [0;39m 总页数：1
+2022-11-12 23:16:28.914 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[{"id":1,"loginName":"xiye","name":"xiye"}],"total":1}},"message":"成功","success":true}
+2022-11-12 23:16:28.914 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 9 ms==========
+2022-11-12 23:16:38.311 INFO  com.xion.wiki.config.aspect.LogAspect             :43   [32m                  [0;39m =========开始========
+2022-11-12 23:16:38.311 INFO  com.xion.wiki.config.aspect.LogAspect             :44   [32m                  [0;39m 请求地址: http://127.0.0.1:7065/user/list, GET
+2022-11-12 23:16:38.311 INFO  com.xion.wiki.config.aspect.LogAspect             :45   [32m                  [0;39m 类名方法: com.xion.wiki.controller.UserController, list
+2022-11-12 23:16:38.311 INFO  com.xion.wiki.config.aspect.LogAspect             :46   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-11-12 23:16:38.311 INFO  com.xion.wiki.config.aspect.LogAspect             :64   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-11-12 23:16:38.313 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-11-12 23:16:38.314 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-11-12 23:16:38.315 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-11-12 23:16:38.315 TRACE c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 1
+2022-11-12 23:16:38.315 DEBUG c.x.wiki.mapper.UserMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:16:38.316 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-11-12 23:16:38.316 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-11-12 23:16:38.317 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2022-11-12 23:16:38.317 TRACE com.xion.wiki.mapper.UserMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, xiye, xiye, 123456
+2022-11-12 23:16:38.317 DEBUG com.xion.wiki.mapper.UserMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 1
+2022-11-12 23:16:38.317 INFO  com.xion.wiki.service.UserService                 :52   [32m                  [0;39m 总行数：1
+2022-11-12 23:16:38.317 INFO  com.xion.wiki.service.UserService                 :53   [32m                  [0;39m 总页数：1
+2022-11-12 23:16:38.317 INFO  com.xion.wiki.config.aspect.LogAspect             :76   [32m                  [0;39m 返回结果: {"code":2000,"data":{"list":{"list":[{"id":1,"loginName":"xiye","name":"xiye"}],"total":1}},"message":"成功","success":true}
+2022-11-12 23:16:38.318 INFO  com.xion.wiki.config.aspect.LogAspect             :77   [32m                  [0;39m ==========结束 耗时: 7 ms==========
